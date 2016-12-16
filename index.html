@@ -28,24 +28,24 @@
      
       // This .on("click") function will trigger the AJAX Call
       $("#find-animal").on("click", function(event) {
+        console.log('onclick');
 
-
-        event.preventDefault();
-
-       
-        var movie = $("#animal-input").val(); 
+        // event.preventDefault();
 
        
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +  movie + "&api_key=dc6zaTOxFJmzC&limit=10";
+        var animal = $("#animal-input").val(); 
 
-        $.ajax({
-               url:queryURL,
-               method: 'GET'
-              }).done(function(response) {
-                console.log(response)
-                // $('#animal-view').text(JSON.stringify(response));
+       
+        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +  animal + "&api_key=dc6zaTOxFJmzCt=10";
+
+        // $.ajax({
+        //        url:queryURL,
+        //        method: 'GET'
+        //       }).done(function(response) {
+        //         console.log(response)
+        //         $('#animal-view').text(JSON.stringify(response));
              
-              });
-      });
+        //       });
+   
 
         
