@@ -1,0 +1,13 @@
+body {
+	background-image: url(assets/space.jpg);
+}
+
+h1 {
+	font-family: 'Space Mono', monospace;
+	color:green;
+	font-size:80px;
+}
+#animal-form {
+	margin-left: 100px;
+
+}
